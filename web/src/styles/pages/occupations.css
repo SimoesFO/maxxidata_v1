@@ -1,0 +1,25 @@
+main .container form fieldset legend {
+  width: 100%;
+
+  font-size: 32px;
+  line-height: 34px;
+  font-weight: 700;
+
+  border-bottom: 1px solid #D3E2E5;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+}
+
+
+main .container form fieldset label {
+  font-size: 18px;
+}
+
+main .container form fieldset .footer {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 40px;
+}
+
+

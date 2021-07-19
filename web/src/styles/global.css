@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #FFF;
+  background: #ebf2f5;
+}
+
+body main {
+  display: flex;
+  justify-content: center;
+
+  padding: 20px;
+}
+
+body main .container {
+  
+  width: 1024px;
+  min-height: 400px;
+  background-color: #FFF;
+  border-radius: 10px;
+  padding: 20px 20px 40px 20px;
+
+
+  color: #5C8599;
+}
+
+.btn-primary {
+  background: rgb(56,100,194);
+  border: 0;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background: rgb(65, 113, 216);
+}
+
+.btn-success {
+  background: rgb(87, 192, 73);
+  border: 0;
+}
+
+.btn-success:hover {
+  background: rgb(100, 216, 85);
+}
+
+.td-center {
+  text-align: center;
+}

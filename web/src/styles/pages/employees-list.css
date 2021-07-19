@@ -1,0 +1,13 @@
+main .container .actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  margin-bottom: 20px;
+}
+
+main .container .actions h3 {
+  color: #777;
+  font-weight: 900;
+}
+
