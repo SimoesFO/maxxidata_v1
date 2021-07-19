@@ -1,0 +1,5 @@
+node_modules
+.docker/db
+*.lock
+*.log
+src/errors/files/*.log

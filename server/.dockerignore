@@ -1,0 +1,9 @@
+node_modules
+dist
+docker-compose.yml
+yarn.lock
+.editorconfig
+.eslintignore
+.eslintrc.json
+.prettierrc
+StepByStep.txt

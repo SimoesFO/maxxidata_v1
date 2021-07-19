@@ -1,0 +1,41 @@
+version: '3.3'
+
+services:
+  node-service:
+    build:
+      context: ./
+      dockerfile: ./.docker/node/Dockerfile
+    container_name: api-jwt-node-container
+    restart: always
+    ports:
+      - $APP_PORT:$APP_PORT
+    # For production, comment all volumes
+    volumes:
+      - ./:/usr/app
+    # command: npm run dev # For production, change to 'npm start'
+    command: bash -c "
+      yarn typeorm migration:run
+      && yarn dev"
+    networks:
+      - postgres-network
+    depends_on:
+      - postgres-service
+
+  postgres-service:
+    image: postgres
+    container_name: api-jwt-postgres-container
+    restart: always
+    ports:
+      - 5432:5432
+    volumes:
+      - ./.docker/db:/var/lib/postgresql/data
+    networks:
+      - postgres-network
+    environment:
+      POSTGRES_DB: $DB_DATABASE
+      POSTGRES_USER: $DB_USER
+      POSTGRES_PASSWORD: $DB_PASSWORD
+
+networks:
+  postgres-network:
+    driver: bridge
