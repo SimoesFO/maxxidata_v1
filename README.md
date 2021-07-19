@@ -73,7 +73,7 @@ Com a instalação da CLI do expo concluída, basta entrar na raiz do projeto e 
 1) Instale as depedências do projeto.
 > npm install ou yarn install
 
-2) Antes de executar o projeto vá no arquivo .env e mude a variável APP_HOST para o IP da sua máquina, caso deseje executar o projeto através do celular, caso opte pelo emulador, basta manter o IP com 127.0.0.1.
+2) Antes de executar o projeto vá no arquivo 'src/services/api.ts' e mude a variável HOST para o IP da sua máquina, caso deseje executar o projeto através do celular, ou para localhost, caso opte pelo emulador.
 
 2) Execute o projeto.
 > npm run start or yarn start
