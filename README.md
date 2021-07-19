@@ -89,4 +89,6 @@ Com a instalação da CLI do expo concluída, basta entrar na raiz do projeto e 
 
 6) Após isso basta iniciar o aplicativo do expo e ler o QR code que apareceu no seu navegador, na tela do expo.
 
-Observação.: Caso não consiga acessar, verifica que o firewall não está bloqueando e seu celular está no modo de desenvolvedor. Qualquer dúvida estou a disposição para ajudar.
+Observação.: Caso não consiga acessar, verifica se o firewall não está bloqueando e se seu celular está no modo de desenvolvedor. 
+
+Qualquer dúvida estou a disposição para ajudar.
